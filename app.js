@@ -123,6 +123,10 @@ nextMonth.addEventListener("click", function () {
   showCalendar(currYear, currMonth, currDate);
 });
 
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  alert("right click is disable");
+});
 /** 11%7 == 4 */
 // const rem = monthDate % 7;
 // const x = week[rem - 1];
