@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellowgreen; */
+  background-image: url("background-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time {
+  width: 420px;
+  height: 250px;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.323);
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.time #period {
+  margin-left: 20px;
+}
+.calender {
+  /* width: 420px;
+  height: 400px; */
+  width: 420px;
+  height: max-content;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.323);
+  border-radius: 10px;
+  box-shadow: 20px 30px 20px #0000006c;
+}
+.control {
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 2rem;
+  padding: 10px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.control span {
+  margin: 0 0.5rem;
+}
+.weekday,
+.date {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+}
+.weekday div {
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 35px;
+  height: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gray; */
+  margin: 0 5px;
+}
+.date div {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  /* background-color: gray; */
+  /* margin: 2px 0; */
+  font-family: "Courier New", Courier, monospace;
+}
+.date div:hover {
+  background-color: skyblue;
+}
+.todaydate {
+  background-color: skyblue;
+  color: black;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 1.3rem !important;
+}
+
+#left-arrow,
+#right-arrow {
+  cursor: pointer;
+  /* background-color: black; */
+  border-radius: 50%;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  /* right: 0; */
+  top: 0;
+  /* left: 300px; */
+}
+.arrow:hover {
+  background-color: gray;
+}
+#left-arrow {
+  right: 3rem;
+}
+#right-arrow {
+  right: 0;
+}
+
+#left-arrow i,
+#right-arrow i {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
